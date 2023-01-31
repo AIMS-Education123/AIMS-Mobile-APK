@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, ScrollView, StyleSheet, SafeAreaView, Image, Dimensions } from "react-native";
 import { AntDesign } from '@expo/vector-icons';
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { shadow } from "react-native-paper";
 
 
 var screenWidth = Dimensions.get('window').width;
@@ -101,29 +102,32 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'white',
-        // marginHorizontal: 14,
         marginTop: 30
     },
     serviceListContainer: {
         flex: 3,
         marginTop: 25,
-        marginBottom: 5,
-        alignItems: 'flex-start',
-        justifyContent: "flex-start",
+        marginBottom: 10,
+        alignItems: 'center',
+        justifyContent: "center",
 
 
     },
     singleList: {
         backgroundColor: "#e0e9f0",
-        width: screenWidth,
+        width: screenWidth - 30,
         padding: 10,
         // borderRadius: 14,
         // marginBottom: 5,
-        // marginVertical: 10
+        marginVertical: 5,
+        borderRadius: 15,
+
+
 
 
 
     },
+
     line: {
 
         borderBottomColor: 'black',

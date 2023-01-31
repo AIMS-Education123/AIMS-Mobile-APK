@@ -19,12 +19,17 @@ export default function Home({ navigation }) {
     return (
         <ScrollView>
             <SafeAreaView style={{ flex: 1 }}>
-                <View style={{ flex: 1 }}>
+                <View style={{ flex: 1, backgroundColor: "#7F9DB7" }}>
 
-                    <View style={{ flex: 1, marginHorizontal: 0, marginTop: 0 }}>
+                    <View style={{
+                        flex: 1, marginTop: 20, justifyContent: "center",
+                        alignItems: 'center'
+                    }}>
+
                         <Image
-                            style={{ height: 290, width: screenWidth, borderRadius: 0 }} source={require('../../assets/images/uk-banner-image.jpg')} />
+                            style={{ height: 150, width: screenWidth - 30, borderRadius: 10, resizeMode: "contain" }} source={require('../../assets/images/uk-banner-image.jpg')} />
                     </View>
+
                     <View style={styles.slogan}>
                         <Text style={{ marginTop: 14, marginHorizontal: 5, fontFamily: 'antonio-bold', fontSize: 28, textAlign: "center", color: "white", fontWeight: "bold" }}>
                             YOUR ONE STOP STUDY SOLUTION
@@ -67,7 +72,7 @@ export default function Home({ navigation }) {
 
                     {/* study destination  */}
                     <View style={{ flex: 4, marginTop: 20, marginHorizontal: 14 }}>
-                        <Text style={{ marginVertical: 14, marginHorizontal: 5, fontFamily: 'antonio-bold', fontSize: 26, textAlign: "left", color: "black", fontWeight: "bold" }}>CHOOSE YOUR STUDY DESTINATION</Text>
+                        <Text style={{ marginVertical: 14, marginHorizontal: 5, fontFamily: 'antonio-bold', fontSize: 26, textAlign: "left", color: "white", fontWeight: "bold" }}>CHOOSE YOUR STUDY DESTINATION</Text>
 
 
                         <View style={styles.studyImageContainer}>
@@ -136,7 +141,7 @@ export default function Home({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#dcdeed',
+        backgroundColor: '#003B6F',
         alignItems: 'center',
         justifyContent: 'center',
         height: screenHeight

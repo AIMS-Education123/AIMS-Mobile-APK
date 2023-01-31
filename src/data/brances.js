@@ -8,7 +8,7 @@ export const brances = [
     },
     {
         name: "Dhaka Branch",
-        location: "First Floor, Block F, Road 7 House 3 Banani, Dhaka 1213 Bangladesh"
+        location: "First Floor, Block F, Road 7 House 3 Banani, Dhaka 1213 Bangladesh",
         phone: "+880 1888-051115",
         email: "dhaka@aims-education.com"
 

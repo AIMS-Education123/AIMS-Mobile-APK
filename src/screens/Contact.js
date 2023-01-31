@@ -5,6 +5,7 @@ import { Foundation } from '@expo/vector-icons';
 
 
 
+
 var screenWidth = Dimensions.get('window').width;
 
 
@@ -73,7 +74,7 @@ export default function Contact() {
 
     return (
         <ScrollView style={{ backgroundColor: 'white' }}>
-            <SafeAreaView >
+            <SafeAreaView>
                 <View style={styles.container}>
                     <View style={{ flex: 1, marginTop: 10 }}>
 
@@ -116,8 +117,8 @@ export default function Contact() {
                                 )
                             }}
                         />
-                    </ScrollView>
 
+                    </ScrollView>
                 </View>
             </SafeAreaView>
         </ScrollView>)
@@ -135,11 +136,11 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         marginHorizontal: 16,
         fontFamily: "spartan-regular",
-
         marginTop: 40
     },
     item: {
-        marginVertical: 15
+        marginVertical: 15,
+        with: screenWidth
 
     },
     title: {
